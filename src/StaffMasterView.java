@@ -23,11 +23,11 @@ import java.util.List;
  * @author Swapnil Roy Chowdhury & Nguyen Anh Tuan Le
  */
 public class StaffMasterView {
-//    All panels are grouped into a single panel with Border layout.
+    //    All panels are grouped into a single panel with Border layout.
     private final JPanel staffMasterViewJPanel = new JPanel(new BorderLayout());
     private final Border defaultJTextFieldBorder = new JTextField().getBorder();
 
-//    Main panel
+    //    Main panel
     public StaffMasterView(StaffController staffController) {
 //        All fields and respective labels are grouped in a panel with flow layout
         Font boldFont = new Font("", Font.BOLD, 13);
@@ -203,14 +203,14 @@ public class StaffMasterView {
         staffMasterViewJPanel.add(databaseStatusJLabel, BorderLayout.SOUTH);
     }
 
-//    reset borders of text fields
+    //    reset borders of text fields
     private void resetBorders(JTextField idJTextField, JTextField lastNameJTextField, JTextField firstNameJTextField, JTextField miJTextField, JTextField addressJTextField, JTextField cityJTextField, JTextField stateJTextField, JTextField telephoneJTextField, JTextField emailJTextField) {
         for (JTextField jTextField : Arrays.asList(idJTextField, lastNameJTextField, firstNameJTextField, miJTextField, addressJTextField, cityJTextField, stateJTextField, telephoneJTextField, emailJTextField)) {
             jTextField.setBorder(defaultJTextFieldBorder);
         }
     }
 
-//    reset texts of text fields
+    //    reset texts of text fields
     private void resetTexts(JTextField idJTextField, JTextField lastNameJTextField, JTextField firstNameJTextField, JTextField miJTextField, JTextField addressJTextField, JTextField cityJTextField, JTextField stateJTextField, JTextField telephoneJTextField, JTextField emailJTextField) {
         for (JTextField jTextField : Arrays.asList(idJTextField, lastNameJTextField, firstNameJTextField, miJTextField, addressJTextField, cityJTextField, stateJTextField, telephoneJTextField, emailJTextField)) {
             jTextField.setText("");

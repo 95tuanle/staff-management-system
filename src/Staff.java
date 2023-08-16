@@ -14,100 +14,100 @@
  * @author Swapnil Roy Chowdhury & Nguyen Anh Tuan Le
  */
 public class Staff {
-	private String id;
-	private String lastName;
-	private String firstName;
-	private String mi;
-	private String address;
-	private String city;
-	private String state;
-	private String telephone;
-	private String email;
+    private String id;
+    private String lastName;
+    private String firstName;
+    private String mi;
+    private String address;
+    private String city;
+    private String state;
+    private String telephone;
+    private String email;
 
-	public Staff() {
-	}
+    public Staff() {
+    }
 
-	public Staff(String id, String lastName, String firstName, String mi, String address, String city, String state, String telephone, String email) {
-		this.id = id;
-		this.lastName = lastName;
-		this.firstName = firstName;
-		this.mi = mi;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.telephone = telephone;
-		this.email = email;
-	}
+    public Staff(String id, String lastName, String firstName, String mi, String address, String city, String state, String telephone, String email) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.mi = mi;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.telephone = telephone;
+        this.email = email;
+    }
 
-	public String getId() {
-		return id;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public String getMi() {
-		return mi;
-	}
+    public String getMi() {
+        return mi;
+    }
 
-	public void setMi(String mi) {
-		this.mi = mi;
-	}
+    public void setMi(String mi) {
+        this.mi = mi;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public String getState() {
+        return state;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public String getTelephone() {
-		return telephone;
-	}
+    public String getTelephone() {
+        return telephone;
+    }
 
-	public void setTelephone(String telephone) {
-		this.telephone = telephone;
-	}
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

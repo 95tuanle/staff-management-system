@@ -19,29 +19,29 @@ import java.awt.event.WindowEvent;
  * @author Swapnil Roy Chowdhury & Nguyen Anh Tuan Le
  */
 public class UserInterface extends JFrame {
-//	Main frame
-	public UserInterface() {
-		StaffController staffController = new StaffController();
-		StaffMasterView staffMasterView = new StaffMasterView(staffController);
-		this.setLayout(new BorderLayout());
-		this.setSize(610, 320);
-		this.setTitle("Staff Management System");
-		this.setLocationRelativeTo(null);
-		this.add(staffMasterView.getStaffMasterView(), BorderLayout.CENTER);
-		this.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				staffController.closeConnection();
-			}
-		});
-		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		this.setVisible(true);
-	}
+    //	Main frame
+    public UserInterface() {
+        StaffController staffController = new StaffController();
+        StaffMasterView staffMasterView = new StaffMasterView(staffController);
+        this.setLayout(new BorderLayout());
+        this.setSize(610, 320);
+        this.setTitle("Staff Management System");
+        this.setLocationRelativeTo(null);
+        this.add(staffMasterView.getStaffMasterView(), BorderLayout.CENTER);
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                staffController.closeConnection();
+            }
+        });
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setVisible(true);
+    }
 
-	/**
-	 * The point of entry for the application.
-	 */
-	public static void main(String[] args) {
-		new UserInterface();
-	}
+    /**
+     * The point of entry for the application.
+     */
+    public static void main(String[] args) {
+        new UserInterface();
+    }
 }

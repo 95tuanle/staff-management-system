@@ -20,7 +20,7 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     Connection connection;
 
-//    Constructor
+    //    Constructor
     public DatabaseConnection() {
         try {
             Class.forName(OracleSqlInfo.DRIVER_CLASS_ORACLE_SQL);
@@ -34,7 +34,7 @@ public class DatabaseConnection {
      * get the connection
      *
      * @return Connection
-     * */
+     */
     public Connection getConnection() {
         return connection;
     }

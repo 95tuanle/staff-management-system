@@ -24,7 +24,7 @@ import java.util.List;
  */
 public record Validator(Border defaultJTextFieldBorder, StaffController staffController) {
 
-//    Validate user input base on conditions, this will trigger UI elements to let user know which fields that they entered invalid inputs
+    //    Validate user input base on conditions, this will trigger UI elements to let user know which fields that they entered invalid inputs
     public boolean validate(boolean isInserting, JTextField idJTextField, JTextField lastNameJTextField, JTextField firstNameJTextField, JTextField miJTextField, JTextField addressJTextField, JTextField cityJTextField, JTextField stateJTextField, JTextField telephoneJTextField, JTextField emailJTextField) {
         List<String> errorMessages = new ArrayList<>();
 
@@ -114,7 +114,7 @@ public record Validator(Border defaultJTextFieldBorder, StaffController staffCon
         }
     }
 
-//    Throw exception according the procedure
+    //    Throw exception according the procedure
     private void throwException(String message, List<String> errorMessages, JTextField jTextField) {
         try {
             throw new InputException(message);
@@ -124,7 +124,7 @@ public record Validator(Border defaultJTextFieldBorder, StaffController staffCon
         }
     }
 
-//    This will set up the UI elements to let the user know about the input errors
+    //    This will set up the UI elements to let the user know about the input errors
     public void triggerInvalidJTextField(JTextField jTextField) {
         jTextField.setBorder(new LineBorder(Color.RED, 1));
 //            The UI elements will be reverted whenever the user make changes to them
@@ -146,7 +146,7 @@ public record Validator(Border defaultJTextFieldBorder, StaffController staffCon
         });
     }
 
-//    Display the
+    //    Display the
     public void displayErrorMessages(List<String> errorMessages) {
         StringBuilder stringBuilder = new StringBuilder();
         for (String errorMessage :
